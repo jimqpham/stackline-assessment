@@ -9,10 +9,7 @@ const mappings = [
 const sortSales = (sales, sortColInd) => {
 	const sortCol = mappings[sortColInd];
 
-	// console.log("devug " + typeof sales[0][sortCol]);
-
 	if (typeof sales[0][sortCol] === "string") {
-		// console.log("hehe");
 		return [...sales].sort((s1, s2) => {
 			return s1[sortCol] === s2[sortCol]
 				? 0
