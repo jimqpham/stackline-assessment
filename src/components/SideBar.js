@@ -11,7 +11,7 @@ const SideBar = () => {
 			className="col-sm-2 p-3 m-3 shadow rounded"
 			style={{ backgroundColor: "#ffffff" }}
 		>
-			<img src={imgUrl} width="100%" alt="product image" />
+			<img src={imgUrl} width="100%" alt="product" />
 			<h3 className="text-center">{title}</h3>
 			<p className="text-center">{subtitle}</p>
 			<hr />

@@ -1,7 +1,5 @@
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import fetchDataAsync from "../store/fetchDataSlice";
-import { LineSeries, XAxis, FlexibleWidthXYPlot, Hint } from "react-vis";
+import { useSelector } from "react-redux";
+import { LineSeries, XAxis, FlexibleWidthXYPlot } from "react-vis";
 import moment from "moment";
 import "../../node_modules/react-vis/dist/style.css";
 

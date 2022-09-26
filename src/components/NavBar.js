@@ -6,8 +6,12 @@ const NavBar = () => {
 			className="navbar navbar-expand-sm"
 			style={{ backgroundColor: "#052849" }}
 		>
-			<a className="navbar-brand col-sm-1" href="#">
-				<img src={Logo} style={{ height: 50, marginLeft: 80 }} />
+			<a className="navbar-brand col-sm-1">
+				<img
+					src={Logo}
+					style={{ height: 50, marginLeft: 80 }}
+					alt="brand logo"
+				/>
 			</a>
 		</nav>
 	);
