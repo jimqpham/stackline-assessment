@@ -13,7 +13,7 @@
 		"axios": "^0.27.2",
 		"bootstrap": "^5.2.1",
 		"moment": "^2.29.4",
-		"react": "16.x",
+		"react": "^18.x",
 		"react-dom": "^18.2.0",
 		"react-redux": "^7.2.9",
 		"react-scripts": "5.0.1",
