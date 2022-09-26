@@ -1,18 +1,21 @@
 import Chart from "./Chart";
 import Table from "./Table";
 
-const MainCanvas = (props) => {
+const MainCanvas = () => {
 	return (
-		<div className="col p-3">
+		<div className="col-sm-9 p-3">
 			<div
-				className="bg-success p-3 shadow rounded"
-				style={{ minHeight: "50vh" }}
+				className="p-3 shadow rounded"
+				style={{ minHeight: "50vh", backgroundColor: "#ffffff" }}
 			>
-				<h3>Retail Sales</h3>
-				<Chart sales={[...props.sales]} />
+				<h5>Retail Sales</h5>
+				<Chart />
 			</div>
-			<div className="bg-warning p-3 shadow rounded">
-				<Table sales={[...props.sales]} />
+			<div
+				className="p-3 mt-5 shadow rounded"
+				style={{ backgroundColor: "#ffffff" }}
+			>
+				<Table />
 			</div>
 		</div>
 	);

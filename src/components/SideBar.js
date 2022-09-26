@@ -1,15 +1,23 @@
-import productImg from "../resources/logo192.png";
+import { useSelector } from "react-redux";
 
-const SideBar = (props) => {
+const SideBar = () => {
+	const imgUrl = useSelector((state) => state.fetchData.image);
+	const title = useSelector((state) => state.fetchData.title);
+	const subtitle = useSelector((state) => state.fetchData.subtitle);
+	const tags = useSelector((state) => state.fetchData.tags);
+
 	return (
-		<div className="col-lg-2 bg-info p-3 m-3 shadow rounded">
-			<img src={props.imgUrl} width="100%" />
-			<h3>{props.title}</h3>
-			<p>{props.subtitle}</p>
+		<div
+			className="col-sm-2 p-3 m-3 shadow rounded"
+			style={{ backgroundColor: "#ffffff" }}
+		>
+			<img src={imgUrl} width="100%" alt="product image" />
+			<h3 className="text-center">{title}</h3>
+			<p className="text-center">{subtitle}</p>
 			<hr />
-			<p>
-				{props.tags.map((tag) => (
-					<span key={tag} className="badge bg-primary">
+			<p className="text-left">
+				{tags.map((tag) => (
+					<span key={tag} className="badge bg-light" style={{ color: "black" }}>
 						{tag}
 					</span>
 				))}
